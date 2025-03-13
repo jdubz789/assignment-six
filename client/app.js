@@ -8,7 +8,7 @@ async function sendChatRequest(event) {
     const userPrompt = event.target.promptInput.value;
     console.log("the prompt is:", userPrompt);
 
-    const response = await fetch("http://localhost:8080/chat", {
+    const response = await fetch("https://assignment-six.onrender.com/chat", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
